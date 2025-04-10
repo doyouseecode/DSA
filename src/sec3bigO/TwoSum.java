@@ -1,4 +1,4 @@
-package bigO;
+package sec3bigO;
 
 import java.util.HashSet;
 
