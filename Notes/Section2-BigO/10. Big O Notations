@@ -1,0 +1,9 @@
+Big O Notations
+
+
+* Omega, Hita, and Omicron
+Micron is better known as Big O
+
+Big O (O) – Upper bound (≤): Describes the worst-case time or space complexity.
+Big Omega (Ω) – Lower bound (≥): Describes the best-case performance.
+Big Theta (Θ) – Tight bound (≈): Describes when best, average, and worst cases are all the same asymptotically.
