@@ -1,0 +1,26 @@
+6. Types of Algorithms
+1 Simple recursive algorithms
+Recursion acts as a loop calling itself iteratively
+until some condition is met
+
+2 Divide and conquer algorithms
+We can call algorithms this way, if it contains at least 2 recursive calls
+- Divide the problem into smaller sub-problems of the same type, and solve these sub-problems
+recursively
+- Combine the solutions to the sub-problems into a solution to the original problem
+ Example: Quick sort and merge sort
+
+3 Dynamic programming algorithms - goal to find best solution among multiple solutions
+- They work based on memorization
+- To find the best solution
+
+4 Greedy algorithms - good for optimization problems
+- We take the best we can without worrying about future consequences
+- We hope that by choosing a local optimum solution at each step,
+we will end up at a global optimum solution
+
+5 Brute force algorithms
+- Simply trying all possible solutions until a satisfactory one is found
+
+6 Randomized algorithms
+- Use a random number at least once during the computation to make a decision
