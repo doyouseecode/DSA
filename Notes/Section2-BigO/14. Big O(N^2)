@@ -1,0 +1,6 @@
+Quadratic time complexity
+
+It is usually nested loop with the same length for both loops.
+But if the inputs are different for the outer loop and inner loop then the
+complexity is O(i*j)
+

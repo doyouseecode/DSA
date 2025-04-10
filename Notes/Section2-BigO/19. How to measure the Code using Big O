@@ -1,0 +1,8 @@
+Time Complexity
+
+Rule 1 - Any assignment statements and if statements that are executed once regardless of the size of the problem - O(1)
+Rule 2 - A simple for loop from o to n - O(n)
+Rule 3 - A nested loop of the same type takes quadratic time complexity - O(n^2)
+Rule 4 - A loop, in which the controlling parameter is divided by two at each step - O(log n)
+Rule 5 - When dealing with multiple statement just add them up or multiplication - it depends
+

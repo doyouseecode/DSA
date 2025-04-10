@@ -1,0 +1,8 @@
+2D arrays in the memory are stored in 1D array format,
+1st comes the 1st row, then second and so on
+
+{[1,2,3],[1,34,5],[12,421,123]}
+2D array is stored this way: 1,2,3,1,34,5,12,421,123
+
+
+3D arrays - never seen before lol

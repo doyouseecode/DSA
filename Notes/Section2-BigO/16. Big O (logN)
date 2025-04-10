@@ -1,0 +1,20 @@
+How does the Big(logN) works
+
+What is Log (Logarithm)
+
+Logarithms answers to the questions, to what power must we raise a base
+to get a number?
+
+Example log8 = 3 ; because 2^3 = 8
+
+In Computer Science
+* Logarithmic Time O(log n): Algorithms that cut the problem size in half
+each step.
+
+Example is Binary search
+
+* Tree structure: Height of balanced Trees is log(n)
+Example is Binary search Tree, Heap
+
+* Complexity analysis: Logarithms appear when data is divided, halved, or structured hierarchically.
+
