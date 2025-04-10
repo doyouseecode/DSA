@@ -1,0 +1,9 @@
+Runtime complexities:
+
+Complexity
+O(1) - constant - A simple add numbers or math function
+O(N) - linear - Loop through numbers from 1 to n
+O(LogN) - logarithmic - Find an element in sorted array
+O(N^2) - quadratic - Nested loops
+
+
