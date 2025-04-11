@@ -1,8 +1,19 @@
-2D arrays in the memory are stored in 1D array format,
+1) The way arrays are stored in the memory:
+int arr[] = {1,2,3,4,5};
+So we've got a reference of the array: arr
+* reference points to the first element in the array
+* and then the consecutive elements will be connected together
+For example:
+* the address for the 1st element is x
+* the address for the 2nd element is x + 1
+
+
+
+2) 2D arrays in the memory are stored in 1D array format,
 1st comes the 1st row, then second and so on
 
 {[1,2,3],[1,34,5],[12,421,123]}
-2D array is stored this way: 1,2,3,1,34,5,12,421,123
+2D array is stored this way:
+1,2,3,1,34,5,12,421,123
 
 
-3D arrays - never seen before lol
