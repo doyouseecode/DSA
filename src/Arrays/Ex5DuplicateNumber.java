@@ -41,6 +41,7 @@ public class Ex5DuplicateNumber {
 
 
 
+    // Time Complexity O(n)
     public static int[] removeDuplicatesFast(int[] nums) {
         int index = 1;
         int number = nums[0];
