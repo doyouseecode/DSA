@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Ex5DuplicateNumber {
 
     public static void main(String[] args) {
-        System.out.println((Arrays.toString(removeDuplicatesSlow(new int[]{1, 1, 10}))));
+        System.out.println((Arrays.toString(removeDuplicatesSlowMine(new int[]{1, 1, 10}))));
         System.out.println((Arrays.toString(removeDuplicatesFast(new int[]{1, 1, 10}))));
     }
 
@@ -19,7 +19,7 @@ public class Ex5DuplicateNumber {
      * so that in the next outer iteration i begins with our new value
      * kinda with new duplicate value other than the previous, good luck!
      */
-    public static int[] removeDuplicatesSlow(int[] arr) {
+    public static int[] removeDuplicatesSlowMine(int[] arr) {
         //   TODO
         int n = arr.length;
         int[] uniqueElements = new int[n];
@@ -38,6 +38,8 @@ public class Ex5DuplicateNumber {
 
         return Arrays.copyOf(uniqueElements, index);
     }
+
+
 
     public static int[] removeDuplicatesFast(int[] nums) {
         int index = 1;
