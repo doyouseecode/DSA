@@ -63,6 +63,8 @@ public class TwoDimensionalArray {
         System.out.println("The value is not found in the array");
     }
 
+    // Time Complexity O(1)
+    // Space Complexity O(1)
     public void deleteValueFromRay(int row, int col) {
         try {
             if (arr[row][col] != Integer.MIN_VALUE) {
