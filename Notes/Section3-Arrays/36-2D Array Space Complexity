@@ -1,0 +1,8 @@
+Time and Space complexity of 2D Array
+Operation                              Time complexity      Space Complexity
+Creating an empty array                     O(1)                O(mn)
+Inserting a value in an array               O(1)                O(1)
+Traversing a given array                    O(mn)                O(1)
+Accessing an element                        O(1)                O(1)
+Searching for a value                       O(mn)                O(1)
+Deleting a given value                      O(1)                O(1)
