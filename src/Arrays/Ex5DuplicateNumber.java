@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Ex5DuplicateNumber {
 
     public static void main(String[] args) {
-        System.out.println((Arrays.toString(removeDuplicatesNotMine(new int[]{1, 1,3,3,4,1,1, 10}))));
+        System.out.println((Arrays.toString(removeDuplicatesFast(new int[]{0,0,1,1,1,2,2,3,3,4}))));
     }
 
     // Time complexity = O(n^2)
@@ -69,13 +69,12 @@ public class Ex5DuplicateNumber {
 
 
     // Time Complexity O(n)
+    // 0,0,1,1,1,2,2,3,3,4
     public static int[] removeDuplicatesFast(int[] nums) {
         int index = 1;
-        int number = nums[0];
         for(int i = 1; i < nums.length; i++){
-            if(nums[i]!=number){
+            if(nums[i]!=nums[index-1]){
                 nums[index++] = nums[i];
-                number = nums[i];
             }
         }
         return Arrays.copyOf(nums, index);
