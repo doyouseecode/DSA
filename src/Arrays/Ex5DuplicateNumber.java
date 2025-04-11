@@ -6,11 +6,11 @@ import java.util.Arrays;
 public class Ex5DuplicateNumber {
 
     public static void main(String[] args) {
-        System.out.println((Arrays.toString(removeDuplicatesSlowMine(new int[]{1, 1, 10}))));
-        System.out.println((Arrays.toString(removeDuplicatesFast(new int[]{1, 1, 10}))));
+        System.out.println((Arrays.toString(removeDuplicatesNotMine(new int[]{1, 1,3,3,4,1,1, 10}))));
     }
 
     // Time complexity = O(n^2)
+    // The following code also assumes that input is sorted
     /** The following nested loop works this way:
      * I take the first element as duplicate
      * and assign it to the unique array only when
@@ -39,6 +39,27 @@ public class Ex5DuplicateNumber {
         return Arrays.copyOf(uniqueElements, index);
     }
 
+
+    public static int[] removeDuplicatesNotMine(int[] array){
+        int n = array.length;
+        int[] uniqueArray = new int[n];
+        int index = 0;
+
+        for (int i = 0; i < n; i++) {
+            boolean isDuplicate = false;
+            for (int j = i + 1; j < n; j++) {
+                if (array[i] == array[j]) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
+            if (!isDuplicate) {
+                uniqueArray[index++] = array[i];
+            }
+        }
+
+        return Arrays.copyOf(uniqueArray, index);
+    }
 
 
     // Time Complexity O(n)
