@@ -40,6 +40,12 @@ public class Ex5DuplicateNumber {
     }
 
 
+    // Time complexity O(n^2)
+    // It takes the number and checks other occurrences
+    // It adds to unique if it is last occurrence,
+    // if it's not last occurrence than we skip current
+    // because we're gonna meet it again in the loop, hoping that next time it will be the last one
+    // [1,1,3,3,4,10]
     public static int[] removeDuplicatesNotMine(int[] array){
         int n = array.length;
         int[] uniqueArray = new int[n];
