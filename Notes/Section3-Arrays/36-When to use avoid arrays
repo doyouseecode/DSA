@@ -1,0 +1,11 @@
+When to use/avoid Arrays
+
+When to use arrays:
+- To store multiple values of the same type
+- To store a collection of related data
+- To store a fixed-size collection of data
+- To store a collection of data that needs to be accessed by index
+
+Cons:
+- Same data type elements
+- Fixed size
