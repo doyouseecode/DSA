@@ -34,6 +34,9 @@ public class Main2DArray {
         sda.traverse2DArray();
         sda.searchingValue(20);
         sda.searchingValue(40);
+        sda.deleteValueFromRay(1,1);
+        sda.deleteValueFromRay(1,1);
+        sda.traverse2DArray();
     }
 
 }
