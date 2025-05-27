@@ -1,4 +1,4 @@
-package Arrays;
+package Sec4Arrays;
 
 public class SingleDimensionArray {
     int arr[] = null;

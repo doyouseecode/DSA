@@ -1,4 +1,4 @@
-package Arrays;
+package Sec4Arrays;
 
 import java.util.Scanner;
 

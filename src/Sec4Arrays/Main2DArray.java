@@ -1,6 +1,4 @@
-package Arrays;
-
-import java.util.Arrays;
+package Sec4Arrays;
 
 public class Main2DArray {
 

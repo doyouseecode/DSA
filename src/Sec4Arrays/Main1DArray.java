@@ -1,4 +1,4 @@
-package Arrays;
+package Sec4Arrays;
 
 public class Main1DArray {
     public static void main(String[] args) {
