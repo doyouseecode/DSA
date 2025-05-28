@@ -7,11 +7,11 @@ public class Main {
         SinglyLinkedList sLL = new SinglyLinkedList();
         sLL.createSinglyLinkedList(5);
         sLL.insertInLinkedList(6,1);
-        sLL.insertInLinkedList(9,3);
-        sLL.addLast(943);
+        sLL.insertInLinkedList(7,3);
+        sLL.insertInLinkedList(8,4);
+        sLL.insertInLinkedList(9,0);
         sLL.traverseSinglyLinkedList();
-        System.out.println("\n"+sLL.findNode(93));
-
+        System.out.println(sLL.searchNode(66));
 
     }
 }

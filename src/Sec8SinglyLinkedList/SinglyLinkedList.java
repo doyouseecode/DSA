@@ -50,6 +50,7 @@ public class SinglyLinkedList {
             node.next = head;
             head = node;
         }
+        size++;
     }
 
     public void addLast(int nodeValue){
@@ -63,23 +64,27 @@ public class SinglyLinkedList {
             tail.next = node;
             tail = node;
         }
+        size++;
     }
 
     public void traverseSinglyLinkedList(){
-        Node head = this.head;
-        while(head!=null){
-            System.out.print(head.value + " ");
-            head = head.next;
+        if(head!=null){
+            Node head = this.head;
+            while(head!=null){
+                System.out.print(head.value + " ");
+                head = head.next;
+            }
+            System.out.println();
         }
     }
 
-    public Node myFindNode(int val){
+    public boolean searchNode(int val){
         Node temp = head;
         while(temp!=null){
-            if(temp.value == val) return temp;
+            if(temp.value == val) return true;
             temp = temp.next;
         }
-        return null;
+        return false;
     }
 
 }
