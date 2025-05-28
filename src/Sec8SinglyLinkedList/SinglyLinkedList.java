@@ -55,17 +55,31 @@ public class SinglyLinkedList {
     public void addLast(int nodeValue){
         Node node = new Node();
         node.value = nodeValue;
-        node.next = null;
-        tail.next = node;
-        tail = node;
+        if(head==null){
+            createSinglyLinkedList(nodeValue);
+        }
+        else{
+            node.next = null;
+            tail.next = node;
+            tail = node;
+        }
     }
 
-    public void traverse(){
+    public void traverseSinglyLinkedList(){
         Node head = this.head;
         while(head!=null){
             System.out.print(head.value + " ");
             head = head.next;
         }
+    }
+
+    public Node myFindNode(int val){
+        Node temp = head;
+        while(temp!=null){
+            if(temp.value == val) return temp;
+            temp = temp.next;
+        }
+        return null;
     }
 
 }
