@@ -13,6 +13,7 @@ public class SinglyLinkedList {
         node.value = value;
         if (head == null) {
             head = node;
+            tail = node;
         } else {
             tail.next = node;
         }
@@ -55,34 +56,95 @@ public class SinglyLinkedList {
         }
     }
 
-
     public boolean insert(int data, int index) {
-        Node node;
-        if(index<0 || index >= size){
-            return false;
-        }
-        else if(index == 0){
-            node = new Node();
-            node.value = data;
+        // here eliminating index>=size
+        // allows us to insert element after the tail
+        if(index<0 || index > size) return false;
+
+        Node node = new Node();
+        node.value = data;
+
+        if(index == 0){
             node.next = head;
             head = node;
-            size++;
-            return true;
         }
-        node = new Node();
-        node.value = data;
-        Node prior = head;
-        Node temp = head;
-        int i = 0;
-        while(i<index){
-            i++;
-            prior = temp;
-            temp=temp.next;
+        else{
+            Node current = head;
+            for(int i = 0; i < index-1; i++){
+                current = current.next;
+            }
+            node.next = current.next;
+            current.next = node;
         }
 
-        node.next = temp;
-        prior.next=node;
         size++;
         return true;
     }
+
+    public Node get(int index) {
+        if(index < 0 || index >= size){
+            return null;
+        }
+        Node current = head;
+        for(int i = 0; i < index; i++){
+            current = current.next;
+        }
+        return current;
+    }
+
+    public String rotate(int number){
+        if(head == null || number >= size){
+            return "WRONG INPUT";
+        }
+        for(int i = 0; i < number; i++){
+            tail.next = head;
+            head = head.next;
+            tail = tail.next;
+            tail.next = null;
+        }
+        return "Success";
+    }
+
+    public boolean set(int index, int value){
+        if(head==null || index >= size){
+            return false;
+        }
+        else{
+            Node current = head;
+            for(int i = 0; i < index; i++){
+                current = current.next;
+            }
+            current.value = value;
+        }
+        return true;
+    }
+
+    public Node remove(int index){
+        Node toRemove;
+        if(head == null || index >= size || index < 0){
+            return null;
+        }
+        else if(size==1){
+            toRemove = head;
+            head = tail = null;
+        }
+        else if(index == 0){
+            toRemove = head;
+            head = head.next;
+        }
+        else{
+            Node secondToLast = head;
+            for(int i = 0; i < index-1; i++){
+                secondToLast = secondToLast.next;
+            }
+            toRemove = secondToLast.next;
+            secondToLast.next = secondToLast.next.next;
+            if(toRemove==tail){
+                tail = secondToLast;
+            }
+        }
+        size--;
+        return toRemove;
+    }
+
 }
