@@ -123,7 +123,7 @@ public class CircularSinglyLinkedList {
         }
         else{
             Node current = head;
-            Node removing = null;
+            Node removing;
             for (int i = 0; i < size; i++){
                 if(current.next.value == nodeValue){
                     if(tail == current.next){
