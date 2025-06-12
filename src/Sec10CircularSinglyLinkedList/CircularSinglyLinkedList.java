@@ -144,4 +144,15 @@ public class CircularSinglyLinkedList {
         return  null;
     }
 
+    public void deleteCircularSinglyLinkedList(){
+        if(head==null){
+        }
+        else{
+            head=null;
+            tail.next=null;
+            tail = null;
+            size=0;
+        }
+    }
+
 }

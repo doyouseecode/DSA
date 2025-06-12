@@ -8,7 +8,7 @@ public class Main {
         circular.addLast(14);
         circular.addLast(95);
 
-        circular.deleteNode(95);
+        circular.deleteCircularSinglyLinkedList();
         System.out.println(circular.size);
         System.out.println(circular.head);
         System.out.println(circular.tail);
